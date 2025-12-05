@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Selma Jackson: Author, Entrepreneur, and Storyteller. Discover her book 'Granny's Helper' and her legacy with 4W Circle.">
+    <title>Selma Jackson | Author, Entrepreneur, Storyteller</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'selma-red': '#C44D3E',
+                        'selma-orange': '#D97B36',
+                        'selma-gold': '#E0B75B',
+                        'selma-cream': '#FDFBF7',
+                        'selma-dark': '#3A2D28',
+                    },
+                    fontFamily: {
+                        serif: ['Merriweather', 'serif'],
+                        sans: ['Lato', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        /* Custom scrollbar for a polished feel */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FDFBF7;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #C44D3E;
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #a83f32;
+        }
+        
+        /* 3D Book Effect */
+        .book-shadow {
+            box-shadow: 
+                5px 5px 15px rgba(0,0,0,0.15),
+                -1px 0 0 rgba(255,255,255,0.5) inset,
+                -2px 0 0 rgba(0,0,0,0.1) inset;
+        }
+        
+        .vibrant-gradient {
+            background: linear-gradient(135deg, #C44D3E 0%, #D97B36 100%);
+        }
+    </style>
+</head>
+<body class="bg-selma-cream text-selma-dark font-sans leading-relaxed">
+
+    <nav class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50 transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center"> 
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="font-serif text-xl font-bold text-selma-red tracking-tight">Selma Jackson</span>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#about" class="text-gray-600 hover:text-selma-red px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
+                    <a href="#book" class="text-gray-600 hover:text-selma-red px-3 py-2 rounded-md text-sm font-medium transition-colors">Her Work</a>
+                    <a href="#contact" class="vibrant-gradient text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-opacity-90 transition-all shadow-md">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-selma-red focus:outline-none" aria-label="Toggle menu">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 shadow-xl">
+            <div class="px-4 pt-2 pb-4 space-y-1">
+                <a href="#about" class="block text-gray-600 hover:text-selma-red hover:bg-gray-50 px-3 py-2 rounded-md text-base font-medium mobile-link">About</a>
+                <a href="#book" class="block text-gray-600 hover:text-selma-red hover:bg-gray-50 px-3 py-2 rounded-md text-base font-medium mobile-link">Her Work</a>
+                <a href="#contact" class="block text-selma-red font-bold hover:bg-gray-50 px-3 py-2 rounded-md text-base mobile-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative pt-28 pb-16 lg:pt-40 lg:pb-24 overflow-hidden"> 
+        <div class="absolute inset-0 z-0 opacity-10">
+            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="dotPattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                        <circle cx="2" cy="2" r="1" fill="#C44D3E" />
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#dotPattern)" />
+            </svg>
+        </div>
+        
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1 space-y-6">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-selma-dark leading-tight">
+                        Weaving Memories into <span class="text-selma-red relative inline-block">
+                            Stories
+                            <svg class="absolute w-full h-3 -bottom-1 left-0 text-selma-orange opacity-40" viewBox="0 0 100 10" preserveAspectRatio="none">
+                                <path d="M0 5 Q 50 10 100 5" stroke="currentColor" stroke-width="8" fill="none" />
+                            </svg>
+                        </span>
+                    </h1>
+                    <p class="text-lg md:text-xl text-gray-600 font-light max-w-lg">
+                        From chemistry to entrepreneurship, and finally to the pages of children's literature. Selma Jackson captures the warmth of Brooklyn history and the timeless bond of family.
+                    </p>
+                    <div class="flex flex-wrap gap-4 pt-4">
+                        <a href="#book" class="vibrant-gradient text-white px-8 py-3 rounded-full font-medium hover:bg-opacity-90 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                            Discover Her Book
+                        </a>
+                        <a href="#videos" class="bg-white text-selma-red border-2 border-selma-red px-8 py-3 rounded-full font-medium hover:bg-selma-red hover:text-white transition-all">
+                            Watch Interviews
+                        </a>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2 flex justify-center lg:justify-end relative">
+                    <div class="relative w-64 h-64 md:w-80 md:h-80">
+                        <div class="absolute inset-0 bg-selma-orange rounded-full opacity-20 transform translate-x-4 translate-y-4"></div>
+                        <div class="absolute inset-0 bg-selma-red rounded-full opacity-20 transform -translate-x-4 -translate-y-4"></div>
+                        <div class="relative w-full h-full rounded-full overflow-hidden border-4 border-white shadow-2xl group">
+                            <img src="https://www.vmcdn.ca/f/files/bkreader/import/2015_03_DSC02689-1024x654.jpg;w=960" alt="Selma Jackson" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-500"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-12">
+            <h2 class="text-3xl font-serif font-bold text-selma-dark mb-4">A Lifetime of Reinvention</h2>
+            <div class="w-24 h-1 bg-selma-red mx-auto rounded-full"></div>
+        </div>
+
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div class="text-center p-6 rounded-xl bg-selma-cream hover:shadow-md transition-shadow">
+                    <div class="w-14 h-14 vibrant-gradient text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3 class="font-serif font-bold text-lg mb-2">The Scientist</h3>
+                    <p class="text-gray-600 text-sm">Majored in Chemistry with a Master's in Environmental Health Sciences. A foundation of analytical thinking.</p>
+                </div>
+                <div class="text-center p-6 rounded-xl bg-selma-cream hover:shadow-md transition-shadow">
+                    <div class="w-14 h-14 vibrant-gradient text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3 class="font-serif font-bold text-lg mb-2">The Educator</h3>
+                    <p class="text-gray-600 text-sm">Spent years as a teacher, shaping young minds and learning the importance of clear communication.</p>
+                </div>
+                <div class="text-center p-6 rounded-xl bg-selma-cream hover:shadow-md transition-shadow">
+                    <div class="w-14 h-14 vibrant-gradient text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3 class="font-serif font-bold text-lg mb-2">The Entrepreneur</h3>
+                    <p class="text-gray-600 text-sm">Co-founded the iconic <span class="font-bold">4W Circle</span> in 1991, an incubator for African-American women in business.</p>
+                </div>
+                <div class="text-center p-6 rounded-xl bg-selma-cream hover:shadow-md transition-shadow">
+                    <div class="w-14 h-14 vibrant-gradient text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3 class="font-serif font-bold text-lg mb-2">The Author</h3>
+                    <p class="text-gray-600 text-sm">Found her storytelling voice at Columbia University's oral history program, leading to "Granny's Helper".</p>
+                </div>
+            </div>
+
+            <div class="mt-12 bg-selma-cream p-8 rounded-2xl relative overflow-hidden">
+                <i class="fas fa-quote-left absolute top-6 left-6 text-5xl text-selma-red opacity-10"></i>
+                <div class="relative z-10 max-w-3xl mx-auto text-center">
+                    <p class="text-lg md:text-xl font-serif italic text-gray-700 mb-4">
+                        "I discovered my writing seemed to always be about my life as a little girl and her remembrances of my grandmother—a sudden recollection of those subtle moments during childhood that shaped the fundamental parts of my adult self."
+                    </p>
+                    <p class="font-bold text-selma-red">— Selma Jackson</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="book" class="py-20 bg-selma-dark text-selma-cream relative">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="w-full md:w-1/3 flex justify-center">
+                    <div class="relative w-64 h-80 bg-white rounded-r-md book-shadow transform rotate-3 hover:rotate-0 transition-transform duration-500 cursor-pointer group">
+                        <div class="absolute left-0 top-0 bottom-0 w-4 bg-gray-300 rounded-l-md border-r border-gray-400"></div>
+                        <div class="absolute inset-0 ml-4 bg-white flex flex-col items-center justify-center p-1 text-center border border-gray-200 overflow-hidden">
+                            <img src="https://www.vmcdn.ca/f/files/bkreader/import/2015_03_DSC02680-576x1024.jpg;w=960" alt="Granny's Helper Book Cover Art" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full md:w-2/3">
+                    <div class="inline-block bg-selma-gold text-black text-xs font-bold px-3 py-1 rounded-full mb-4 uppercase tracking-wide">
+                        Phillis Wheatley Book Award Honoree
+                    </div>
+                    <h2 class="text-4xl font-serif font-bold mb-6">Granny's Helper</h2>
+                    <p class="text-lg text-gray-300 mb-6 leading-relaxed">
+                        A semi-autobiographical treasure capturing the innocence of the 1950s. The story follows a young girl helping her blind grandmother, reading letters, guiding her steps, and in turn, learning profound lessons about love, empathy, and resilience.
+                    </p>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
+                        <div class="flex items-start">
+                            <i class="fas fa-heart text-selma-red mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-bold text-white">For All Ages</h4>
+                                <p class="text-sm text-gray-400">Written for ages 7-11, but cherished by grandmothers everywhere.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-comments text-selma-red mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-bold text-white">Interactive Reflection</h4>
+                                <p class="text-sm text-gray-400">Includes questions to encourage conversation between parent and child.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="https://www.amazon.com/Grannys-Helper-Selma-Jackson/dp/0990955806" target="_blank" rel="noopener noreferrer" class="vibrant-gradient text-white px-8 py-3 rounded-full font-medium hover:bg-opacity-90 transition-all text-center shadow-md">
+                            <i class="fab fa-amazon mr-2"></i> Buy on Amazon
+                        </a>
+                        <a href="#contact" class="border border-white text-white px-8 py-3 rounded-full font-medium hover:bg-white hover:text-selma-dark transition-all text-center">
+                            Request Author Reading
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="legacy" class="py-20 bg-selma-cream">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row gap-12 items-center">
+                <div class="w-full lg:w-1/2 order-2 lg:order-1">
+                    <h2 class="text-3xl font-serif font-bold text-selma-dark mb-6">The Legacy of 4W Circle</h2>
+                    <p class="text-gray-700 mb-4 leading-relaxed">
+                        In 1991, Selma Jackson, along with three other visionary women, founded <strong>4W Circle of Art and Enterprise</strong> in Fort Greene, Brooklyn. For over 17 years, it was a beacon for community and commerce.
+                    </p>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        More than a boutique, 4W Circle was a pioneering <strong>retail incubator</strong> that launched the careers of countless African-American women entrepreneurs, providing them with a platform to sell their art, clothing, and accessories.
+                    </p>
+                    <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-selma-red mb-6">
+                        <p class="italic text-gray-600">"We created a space that was unapologetically about us, for us, and by us. It was about economic empowerment and cultural celebration."</p>
+                    </div>
+                    <a href="https://www.brooklynpaper.com/4w-comes-full-circle/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center font-bold text-selma-red hover:text-selma-orange transition-colors">
+                        Read the full story in Brooklyn Paper <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                <div class="w-full lg:w-1/2 order-1 lg:order-2 flex justify-center">
+                    <div class="relative max-w-sm w-full rounded-lg overflow-hidden shadow-xl transform rotate-1 hover:rotate-0 transition-all duration-500 border-8 border-white">
+                        <img src="https://www.brooklynpaper.com/wp-content/uploads/2008/01/31_04_selmajackson_z.jpg?quality=51&w=500" alt="Selma Jackson at 4W Circle" class="w-full h-auto object-cover">
+                        <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white text-xs p-2 text-center">
+                            Selma Jackson at 4W Circle, 2008
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="faith" class="py-16 bg-white border-t border-gray-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-serif font-bold text-selma-dark mb-8">Faith & Community Leadership</h2>
+            <p class="text-lg text-gray-700 mb-10 leading-relaxed">
+                A dedicated member of the Lafayette Avenue Presbyterian Church, Selma continues to serve her community through faith. As Moderator-elect of the <strong>Presbytery of New York City</strong>, she assists with the ordination and installation of new pastors, guiding the next generation of spiritual leaders.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-6">
+                <div class="flex items-center p-4 bg-selma-cream rounded-lg border border-gray-100 hover:border-selma-red transition-colors cursor-default mb-4 md:mb-0 w-full md:w-auto">
+                    <i class="fas fa-church text-selma-red text-2xl mr-4"></i>
+                    <div class="text-left">
+                        <h4 class="font-bold text-selma-dark">Lafayette Ave Presbyterian</h4>
+                        <p class="text-xs text-gray-600 uppercase tracking-wide">Dedicated Member</p>
+                    </div>
+                </div>
+                <div class="flex items-center p-4 bg-selma-cream rounded-lg border border-gray-100 hover:border-selma-orange transition-colors cursor-default w-full md:w-auto">
+                    <i class="fas fa-users text-selma-orange text-2xl mr-4"></i>
+                    <div class="text-left">
+                        <h4 class="font-bold text-selma-dark">Presbytery of NYC</h4>
+                        <p class="text-xs text-gray-600 uppercase tracking-wide">Moderator-elect</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="videos" class="py-20 bg-selma-cream">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-serif font-bold text-selma-dark mb-4">In Her Own Words</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Watch Selma Jackson discuss her writing process, her childhood memories, and the importance of diverse stories.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg group">
+                    <div class="relative w-full" style="padding-bottom: 56.25%;">
+                        <iframe 
+                            class="absolute top-0 left-0 w-full h-full" 
+                            src="https://www.youtube.com/embed/YILjc6U3cJQ" 
+                            title="A Conversation with Author Selma Jackson" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2 group-hover:text-selma-red transition-colors">A Conversation on "Granny's Helper"</h3>
+                        <p class="text-gray-600 text-sm">Selma discusses the transition from 4W Circle to writing and the themes of her first book.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg group">
+                    <div class="relative w-full" style="padding-bottom: 56.25%;">
+                        <iframe 
+                            class="absolute top-0 left-0 w-full h-full" 
+                            src="https://www.youtube.com/embed/aWrNQw08eQI" 
+                            title="Author Selma Jackson Wins Phillis Wheatley Book Award" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2 group-hover:text-selma-red transition-colors">Phillis Wheatley Book Award</h3>
+                        <p class="text-gray-600 text-sm">Accepting honors at the Harlem Book Fair (2015). A moment of recognition for her literary debut.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 vibrant-gradient text-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h3 class="text-2xl font-serif font-bold mb-4">Latest Community Work</h3>
+            <p class="text-lg opacity-90 mb-6">
+                Selma continues to give back. In recent years, she has been involved with the <strong>"Granny & Me"</strong> program, connecting esteemed elders with Gen Z youth to bridge generational gaps and share wisdom.
+            </p>
+            <div class="inline-flex items-center font-bold bg-white text-selma-red px-6 py-2 rounded-full">
+                <i class="fas fa-hands-helping mr-2"></i> Always Serving Brooklyn
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-selma-dark text-white">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-serif font-bold mb-6">Get in Touch</h2>
+            <p class="text-gray-300 mb-10 text-lg">
+                Interested in booking Selma for a school reading, oral history workshop, or purchasing bulk copies of "Granny's Helper"?
+            </p>
+
+            <form action="mailto:selalapc@gmail.com" method="post" enctype="text/plain" class="bg-white rounded-lg p-8 shadow-2xl text-left">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Name</label>
+                        <input type="text" id="name" name="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-selma-red focus:border-transparent text-gray-900 outline-none transition-all" placeholder="Your Name" required>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                        <input type="email" id="email" name="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-selma-red focus:border-transparent text-gray-900 outline-none transition-all" placeholder="your@email.com" required>
+                    </div>
+                </div>
+                <div class="mb-6">
+                    <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                    <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-selma-red focus:border-transparent text-gray-900 outline-none transition-all" placeholder="How can we help you?" required></textarea>
+                </div>
+                <button type="submit" class="w-full vibrant-gradient text-white font-bold py-4 rounded-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1 shadow-md">
+                    Send Message via Email
+                </button>
+            </form>
+
+            <div class="mt-12 flex justify-center space-x-8 opacity-70">
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-map-marker-alt text-2xl mb-2"></i>
+                    <span class="text-sm">Bed-Stuy, Brooklyn, NY</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-book text-2xl mb-2"></i>
+                    <span class="text-sm">Simple Pleasures Imprint</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black text-gray-500 py-8 border-t border-gray-800">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0">
+                &copy; 2025 Selma Jackson. All rights reserved.
+            </div>
+            <div class="text-sm">
+                Designed with <i class="fas fa-heart text-selma-red mx-1"></i> for Storytellers.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle Mobile Menu
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const links = document.querySelectorAll('.mobile-link');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
